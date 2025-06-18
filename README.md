@@ -1,104 +1,107 @@
-Project Description
-This project is a full-stack clone of the popular accommodation booking platform AirBnB. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. The project will cover frontend development, backend APIs, database design, and deployment.
+# Airbnb Clone Project
 
-Learning Objectives
-By completing this project, you will:
+## Project Overview
 
-Learn to implement responsive UI/UX designs
-Understand how to structure a complex web application
-Practice working in a team with defined roles
-Develop skills in component-based frontend architecture
-Learn best practices for web application development
-Tech Stack
-Frontend: HTML, CSS, JavaScript (React or similar framework)
-Version Control: Git and GitHub
-Design Tools: Figma for UI/UX design
-Requirements
-Project Initialization
+**StayEase** is a full-stack clone of Airbnb built to practice end-to-end web application development. This project enables users to browse listings, view property details, and complete secure bookings. It covers responsive UI/UX, frontend and backend development, API integration, and deployment best practices.
 
-Set up GitHub repository with proper documentation
-Include comprehensive README with project overview
-UI/UX Design Planning
+---
 
-Document design goals and key features
-Create page descriptions for main views
-Analyze Figma design specifications
-Identify color schemes and typography
-Roles and Responsibilities
+## Tech Stack
 
-Define team structure and responsibilities
-Document each role’s contribution to the project
-UI Component Patterns
+- **Frontend:** HTML, CSS, JavaScript (React)
+- **Version Control:** Git & GitHub
+- **Design Tool:** Figma
+- **Deployment:** To be determined (e.g., Vercel, Netlify, Render, etc.)
 
-Plan reusable UI components
-Document component architecture
-Best Practices
-Code Organization: Maintain clean, modular code structure
-Version Control: Use feature branches and meaningful commit messages
-Responsive Design: Ensure mobile-first approach
-Accessibility: Follow WCAG guidelines
-Documentation: Keep all project documentation updated
-Testing: Implement unit and integration tests
-UI/UX Design Planning
-Design Goals
-Create intuitive booking flow
-Maintain visual consistency
-Ensure fast loading times
-Prioritize mobile responsiveness
-Key Features
-Property search and filtering
-Detailed property viewing
-Secure checkout process
-User authentication
-Primary Pages
-Page	Description
-Property Listing View	Grid display of available properties with filters
-Listing Detailed View	Complete property details with images and booking form
-Simple Checkout View	Streamlined payment and booking confirmation
-Importance of User-Friendly Design
-A well-designed booking system reduces friction in the user journey, increases conversion rates, and improves customer satisfaction. Clear navigation, intuitive interfaces, and responsive design are critical for success.
+---
 
-Figma Design Specifications
-Color Styles:
+## UI/UX Design Planning
 
-Primary: #FF5A5F
-Secondary: #008489
-Background: #FFFFFF
-Text: #222222
-Secondary Text: #717171
-Typography:
+### Design Goals
 
-Primary Font: Circular, Medium (500), 16px
-Headings: Circular, Bold (700), 24px-32px
-Secondary Text: Circular, Book (400), 14px
-Project Roles and Responsibilities
-Role	Responsibilities
-Project Manager	Oversees timeline, coordinates team, manages deliverables
-Frontend Developers	Implements UI components, ensures responsive design
-Backend Developers	Builds APIs, manages database, implements business logic
-Designers	Creates mockups, maintains design system, ensures UX quality
-QA/Testers	Writes test cases, performs testing, reports bugs
-DevOps Engineers	Manages deployment, CI/CD pipeline, server infrastructure
-Product Owner	Defines requirements, prioritizes features, represents stakeholders
-Scrum Master	Facilitates agile processes, removes blockers, organizes meetings
-UI Component Patterns
-Planned Components
-Navbar
+- Create an intuitive and seamless booking flow
+- Maintain visual and brand consistency
+- Optimize performance and load speed
+- Prioritize mobile responsiveness and accessibility
 
-Logo
-Search bar
-User navigation
-Responsive menu
-Property Card
+### Key Features
 
-Property image
-Basic details (price, location, rating)
-Favorite button
-Responsive layout
-Footer
+- Property search and filtering
+- Detailed property view with booking options
+- Streamlined and secure checkout process
+- User authentication (login/signup)
 
-Site links
-Company information
-Social media links
-Copyright information
-Each component will be designed for reusability and consistency across the application.
+### Primary Pages
+
+| Page | Description |
+|------|-------------|
+| **Property Listing View** | Grid display of available properties with search and filter options |
+| **Listing Detailed View** | Full property details including images, descriptions, and booking form |
+| **Simple Checkout View** | Booking summary, payment input, and confirmation message |
+
+### Importance of a User-Friendly Design
+
+A user-friendly design enhances customer trust, reduces booking friction, and improves conversion. Clean navigation, visual clarity, and responsive elements are key to delivering an optimal user experience.
+
+---
+
+## Design Specifications (Figma)
+
+### Color Styles
+
+- **Primary:** `#FF5A5F`
+- **Secondary:** `#008489`
+- **Background:** `#FFFFFF`
+- **Text:** `#222222`
+- **Secondary Text:** `#717171`
+
+### Typography
+
+- **Primary Font:** Circular
+- **Font Weights:**  
+  - Book (400) – for secondary text  
+  - Medium (500) – for body content  
+  - Bold (700) – for headings  
+- **Font Sizes:**  
+  - Headings: 24px–32px  
+  - Body: 16px  
+  - Secondary Text: 14px
+
+### Why Identify Design Properties?
+
+Understanding the design system ensures consistent implementation, speeds up development, and helps deliver a polished, accessible, and user-focused interface that matches stakeholder expectations.
+
+---
+
+## Project Roles and Responsibilities
+
+| Role | Responsibilities |
+|------|-------------------|
+| **Project Manager** | Oversees project timeline, team coordination, and deliverables |
+| **Frontend Developers** | Build and maintain UI components, ensure responsiveness |
+| **Backend Developers** | Develop API endpoints, database models, and business logic |
+| **Designers** | Create mockups, refine UX, and manage visual style guide |
+| **QA/Testers** | Write and execute test cases, report bugs, ensure system stability |
+| **DevOps Engineers** | Manage CI/CD pipelines, deployments, and server infrastructure |
+| **Product Owner** | Define core features, prioritize backlog, represent user needs |
+| **Scrum Master** | Facilitate agile practices, daily standups, and remove blockers |
+
+---
+
+## UI Component Patterns
+
+### 1. **Navbar**
+- Includes logo, search bar, user navigation menu
+- Responsive hamburger for mobile view
+
+### 2. **Property Card**
+- Displays image, price, rating, and location
+- Includes favorite (heart) button
+- Responsive layout for grid and list views
+
+### 3. **Footer**
+- Contains company info, navigation links, social icons, copyright
+
+---
+
+**Repository:** [GitHub Repo: airbnb-clone-project](https://github.com/ephrim-s/airbnb-clone-project.git)
