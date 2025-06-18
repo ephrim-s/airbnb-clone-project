@@ -1,8 +1,8 @@
-# Airbnb Clone Project
+# Airbnb Clone Project for Frontend
 
 ## Project Overview
 
-**StayEase** is a full-stack clone of Airbnb built to practice end-to-end web application development. This project enables users to browse listings, view property details, and complete secure bookings. It covers responsive UI/UX, frontend and backend development, API integration, and deployment best practices.
+The AirBnB clone project is a full-stack clone of Airbnb built to practice end-to-end web application development. This project enables users to browse listings, view property details, and complete secure bookings. It covers responsive UI/UX, frontend and backend development, API integration, and deployment best practices.
 
 ---
 
@@ -105,3 +105,138 @@ Understanding the design system ensures consistent implementation, speeds up dev
 ---
 
 **Repository:** [GitHub Repo: airbnb-clone-project](https://github.com/ephrim-s/airbnb-clone-project.git)
+
+
+
+
+
+# Airbnb Clone Project for Backend
+
+
+## 📌 Project Overview
+
+The Airbnb Clone Project is a backend-focused, full-stack simulation of a real-world booking platform, inspired by Airbnb. It emphasizes robust backend development, secure API creation, CI/CD integration, and scalable database design. The project aims to provide hands-on experience with industry-standard practices and tools in a collaborative software development environment.
+
+---
+
+## Team Roles
+
+| Role                         | Responsibility                                                                 |
+|------------------------------|----------------------------------------------------------------------------------|
+| **Backend Developer**        | Develops the server-side logic using Django, builds REST/GraphQL APIs, and ensures functionality. |
+| **Database Administrator**   | Designs, implements, and maintains the MySQL database schema, ensuring data integrity and performance. |
+| **DevOps Engineer**          | Manages CI/CD pipelines, automates deployments using Docker and GitHub Actions. |
+| **Security Specialist**      | Implements security measures including authentication, authorization, and data encryption. |
+| **Technical Writer**         | Maintains documentation for setup, architecture, and development processes. |
+
+---
+
+## Technology Stack
+
+| Technology        | Purpose                                                                 |
+|-------------------|-------------------------------------------------------------------------|
+| **Django**        | A Python web framework for building RESTful and GraphQL APIs.          |
+| **MySQL**         | A relational database system to store structured application data.     |
+| **GraphQL**       | A query language to enable flexible API responses and reduce over-fetching. |
+| **Docker**        | Containerization tool to ensure consistency across different environments. |
+| **GitHub Actions**| Automates tests, builds, and deployments in the CI/CD pipeline.         |
+
+---
+
+## Database Design
+
+### Key Entities
+
+#### Users
+- `id` (PK)
+- `username`
+- `email`
+- `password_hash`
+- `created_at`
+
+#### Properties
+- `id` (PK)
+- `owner_id` (FK to Users)
+- `title`
+- `description`
+- `price_per_night`
+
+#### Bookings
+- `id` (PK)
+- `user_id` (FK to Users)
+- `property_id` (FK to Properties)
+- `start_date`
+- `end_date`
+
+#### Reviews
+- `id` (PK)
+- `user_id` (FK to Users)
+- `property_id` (FK to Properties)
+- `rating`
+- `comment`
+
+#### Payments
+- `id` (PK)
+- `booking_id` (FK to Bookings)
+- `amount`
+- `status`
+- `payment_date`
+
+### Relationships
+
+- A **User** can own multiple **Properties**.
+- A **Property** can have many **Bookings** and **Reviews**.
+- A **Booking** is linked to one **User** and one **Property**.
+- A **Review** is written by a **User** for a **Property**.
+- A **Payment** is associated with a single **Booking**.
+
+---
+
+## 🔧 Feature Breakdown
+
+- **User Management**  
+  Handles registration, login, profile management, and user authentication.
+
+- **Property Management**  
+  Allows hosts to create, update, and delete property listings with detailed information.
+
+- **Booking System**  
+  Enables users to check availability and book properties for specific dates.
+
+- **Review System**  
+  Allows users to leave feedback and rate properties they've booked.
+
+- **Payment Integration**  
+  Simulates secure handling of payments linked to bookings.
+
+---
+
+## API Security
+
+### Key Measures
+
+- **Authentication**: Verifies user identity using token-based methods (e.g., JWT).
+- **Authorization**: Ensures users only access resources they’re permitted to.
+- **Rate Limiting**: Prevents misuse by restricting excessive requests.
+- **Input Validation**: Mitigates attacks by sanitizing user inputs.
+- **HTTPS & Secure Headers**: Encrypts communications and enforces secure browser policies.
+
+> Security is essential to protect sensitive user data, secure payment details, and ensure trustworthiness of the application.
+
+---
+
+## CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD (Continuous Integration and Continuous Deployment) automates code integration, testing, and deployment to reduce manual effort and human error.
+
+### Tools Used
+
+- **GitHub Actions**: Runs tests, builds, and deployment steps on each push or PR.
+- **Docker**: Creates consistent environments for development, testing, and production.
+- **(Optional)**: Hosting platforms like **Heroku**, **Render**, or **Vercel** for backend deployment.
+
+> CI/CD boosts code reliability and team productivity by automating repetitive workflows.
+
+---
